@@ -16,7 +16,7 @@ uid: fundamentals/logging
 
 By [Steve Smith](http://ardalis.com) and [Tom Dykstra](https://github.com/tdykstra)
 
-ASP.NET Core has built-in support for a logging API that works with a variety of logging providers. Microsoft providers let you send logs to one or more destinations, and you can plug in a third-party logging framework. This article shows how to use the built-in logging API and Microsoft providers in your code.
+ASP.NET Core has built-in support for a logging API that works with a variety of logging providers. Built-in providers let you send logs to one or more destinations, and you can plug in a third-party logging framework. This article shows how to use the built-in logging API and providers in your code.
 
 [View or download sample code](https://github.com/aspnet/Docs/tree/master/aspnetcore/fundamentals/logging/sample)
 
@@ -31,7 +31,7 @@ ASP.NET Core [dependency injection](dependency-injection.md) (DI) provides the `
 > [!NOTE]
 > The sample application for this article adds logging providers in the `Configure` method of the `Startup` class. If you want to get log output from code that executes earlier, add logging providers in the `Startup` class constructor instead. 
 
-You'll find information about each [Microsoft-supported logging provider](#microsoft-supported-logging-providers) and links to [third-party logging providers](#third-party-logging-providers) later in the article.
+You'll find information about each [built-in logging provider](#built-in-logging-providers) and links to [third-party logging providers](#third-party-logging-providers) later in the article.
 
 ## How to create logs
 
@@ -274,9 +274,9 @@ warn: TodoApi.Controllers.TodoController[4000]
       GetById(0) NOT FOUND
 ```
 
-## Microsoft-supported logging providers
+## Built-in logging providers
 
-The following provider are supported:
+ASP.NET Core ships the following providers:
 
 * [Console](#console)
 * [Debug](#debug)
@@ -441,6 +441,6 @@ Here are some third-party logging frameworks that work with ASP.NET Core:
 
 Some third-party frameworks can do [semantic logging, also known as structured logging](http://programmers.stackexchange.com/questions/312197/benefits-of-structured-logging-vs-basic-logging).
 
-Using a third-party framework is similar to using one of the Microsoft-supported providers: you add a NuGet package to your project and call an extension method on `ILoggerFactory`. For more information, see each framework's documentation.
+Using a third-party framework is similar to using one of the built-in providers: add a NuGet package to your project and call an extension method on `ILoggerFactory`. For more information, see each framework's documentation.
 
 You can create your own custom providers as well, to support other logging frameworks or your own logging requirements.
