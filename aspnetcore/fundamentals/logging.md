@@ -16,7 +16,7 @@ uid: fundamentals/logging
 
 By [Steve Smith](http://ardalis.com) and [Tom Dykstra](https://github.com/tdykstra)
 
-ASP.NET Core has built-in support for a logging API that works with a variety of logging providers. Built-in providers let you send logs to one or more destinations, and you can plug in a third-party logging framework. This article shows how to use the built-in logging API and providers in your code.
+ASP.NET Core supports a logging API that works with a variety of logging providers. Built-in providers let you send logs to one or more destinations, and you can plug in a third-party logging framework. This article shows how to use the built-in logging API and providers in your code.
 
 [View or download sample code](https://github.com/aspnet/Docs/tree/master/aspnetcore/fundamentals/logging/sample)
 
